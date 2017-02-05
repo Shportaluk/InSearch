@@ -1,0 +1,36 @@
+﻿#list_search {
+	position: relative;
+}
+#list_search aside {
+	width: 400px;
+}
+#list_search aside a img{
+	position: relative;
+	top: 2px;
+	left: 2px;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0 0 1px black;
+}
+#list_search aside a strong{
+	position: relative;
+    top: -8px;
+    left: 10px;
+	font-weight: 100;
+	font-size: 16px;
+}
+#information {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	width: calc( 100% - 400px );
+	height: 300px;
+	background-color: black;
+}
+
+.button_search {
+	display: block;
+	overflow: hidden;
+	padding: 15px 20px;
+	margin-bottom: 1px;
+}

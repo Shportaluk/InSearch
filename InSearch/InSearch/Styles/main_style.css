@@ -1,0 +1,156 @@
+﻿body {
+	background: url("Images/background.jpg") 100% 100% no-repeat fixed;
+	background-size: cover;
+}
+
+#header{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	width: 100%;
+	height: 50px;
+	
+	background-color: white;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+#header #InSearch{
+	position: relative;
+	left: 15px;
+	top: -6px;
+	font-size: 33px;
+	font-family: Pacifico;
+	transition: 0.5s;
+}
+#header a:hover{
+	color: white;
+	text-shadow: 0 0 1px black;
+	transition: 0.15s;
+}	
+
+#header .button {
+    box-shadow: 0 0 1px black;
+}
+
+#header #search {
+	position: absolute;
+	top: 4px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	text-align: center;
+}
+#header #logout {
+	position: absolute;
+	right: 15px;
+	top: 4px;
+}
+
+#block {
+	position: absolute;
+	left: 5px;
+	top: 55px;
+	width: 170px;
+	height: 250px;
+	
+}
+#block>aside a {
+	padding: 7px 5px;
+	display: block;
+	margin-bottom: 2px;
+	border-radius: 2px;
+	background-color: rgba(255,255,255,0.15);
+	transition: 0.2s;
+}
+#block>aside a:hover {
+	color: white;
+	background-color: #FF8000;
+	box-shadow: 0 0 5px #FF8000;
+	transition: 0s;
+}
+#block>aside a strong {
+    position: relative;
+    left: 5px;
+    top: 1px;
+	font-size: 17px;
+	color: white;
+	font-family: Basic, TwoLang;
+    letter-spacing: 1.5px;
+}
+#block>aside a img {
+    position: relative;
+    top: -2px;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+#main {
+	position: absolute;
+	left: 180px;
+	top: 55px;
+	
+	width: calc( 100% - 185px );
+	height: calc( 100% - 60px );
+	
+	background-color: rgba(255,255,255,0.1);
+}
+strong, p {
+    letter-spacing: 1px;
+    font-family: CaviarDreams;
+    font-weight: 100;
+}
+
+button, input[type=submit], .button {
+    z-index: 1;
+    background-color: white;
+    border: 1px solid transparent;
+    padding: 10px 17px;
+    
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: TwoLang;
+    transition: .9s;
+}
+button:hover, input[type=submit]:hover, .button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    transition: .35s;
+}
+
+@font-face {
+ font-family: Expand;
+ src: url("Fonts/Expand.ttf");
+}
+@font-face {
+ font-family: Peer;
+ src: url( "Fonts/Peer.ttf" );
+}
+@font-face {
+ font-family: Pacifico;
+ src: url( "Fonts/Pacifico.ttf" );
+}
+@font-face {
+ font-family: Basic;
+ src: url( "Fonts/Basic.ttf" );
+}
+@font-face {
+ font-family: Caviar_Dreams_Bold;
+ src: url("Fonts/Caviar_Dreams_Bold.ttf");
+}
+@font-face {
+ font-family: CaviarDreams;
+ src: url("Fonts/CaviarDreams.ttf");
+}
+@font-face {
+ font-family: TwoLang;
+ src: url("Fonts/twolang.ttf");
+}
+@font-face {
+ font-family: exo;
+ src: url("Fonts/exo.otf");
+}

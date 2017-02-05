@@ -1,0 +1,39 @@
+﻿#questions strong, p{
+    font-family: TwoLang;
+}
+
+.question {
+    position: relative;
+    padding: 13px 20px;
+    
+    background-color: white;
+    transition: 0.35s;
+    border-bottom: 3px solid grey;
+
+    
+    padding-right: 250px;
+}
+.question:hover {
+    color: white;
+    background-color: grey;
+
+    transition: 0.1s;
+}
+
+.input_radio {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+.input_radio strong {
+    position:relative;
+    top: -2px;
+}
+
+#complete {
+    position: relative;
+    margin: 5px;
+    width: 150px;
+    margin-left: -75px;
+    left: 50%;
+}

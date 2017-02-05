@@ -1,0 +1,39 @@
+﻿@using InSearch.Entities;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<Question> questions = ViewBag.Questions;
+    ViewBag.Title = "Question";
+}
+
+<script src="~/Scripts/js_question.js"></script>
+<link href="~/Styles/question.css" rel="stylesheet" />
+
+
+<div id="list_choose_question">
+    <a href="question/question_1">Question #1</a>
+    <a href="question/question_2">Question #2</a>
+    <a href="question/question_3">Question #3</a>
+    <a href="question/question_4">Question #4</a>
+</div>
+@if (questions != null)
+{
+    <div id="questions">
+        <p>Name Question</p>
+        @for (int i = 0; i < @questions.Count; i++)
+        {
+            <div class="question" >
+                <div>
+                    <strong class="ask">@questions[@i].Ask</strong>
+                    <div class="input_radio">
+                        @foreach (string ans in @questions[@i].OptionsAnswer)
+                        {
+                            <input type="radio" name="quest_@i" value="@ans" checked />
+                            <strong>@ans</strong>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        <button id="complete" onclick="Complete()">Завершити</button>
+    </div>
+}

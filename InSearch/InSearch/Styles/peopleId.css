@@ -1,0 +1,178 @@
+﻿#profile_img {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+#action_on_user {
+    position: absolute;
+    left: 15px;
+    top: 320px;
+    width: 200px;
+    z-index: 2;
+}
+
+#action_on_user button {
+    width: 200px;
+    font-family: exo;
+    color: dimgrey;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+#action_on_user button:hover {
+    color: white;
+}
+
+#header_info {
+    background-color: white;
+    height: 55px;
+}
+
+.status {
+    position: absolute;
+    top: 17px;
+    right: 25px;
+}
+.status .strong_online, .strong_offline{
+    color: transparent;
+    font-family: CaviarDreams;
+    text-shadow: 0 0 1px #2ECCFA;
+    margin: 5px;
+}
+.strong_offline {  text-shadow: 0 0 1px grey; }
+.circle_online {
+    margin: 4px 0px 4px 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    float: left;
+    background-color: #2ECCFA;
+    box-shadow: 0 0 5px #2ECCFA;
+}
+.circle_offline {
+    margin: 4px 0px 4px 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    float: left;
+    background-color: grey;
+    box-shadow: 0 0 5px grey;
+}
+
+#full_name {
+    position: relative;
+    top: 15px;
+    left: 25px;
+
+    color: black;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: TwoLang;
+}
+
+#information {
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 250px;
+    background-color: white;
+}
+.text_in_border {
+    padding: 5px;
+    border: 1px solid;
+}
+.text_in_border:hover {
+    color: white;
+    background-color: black;
+}
+
+#friends {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 220px;
+    
+    z-index: 1;
+}
+#layout {
+    padding: 15px;
+}
+#mutual_friends, #all_friends, #all_friends_in_my_profile {
+    position: relative;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 15px black;
+}
+#mutual_friends { width: calc( 50% - 20px );}
+#all_friends {
+    width: calc( 50% - 20px );
+    top: -215px;
+    left: 50%;
+}
+#mutual_friends strong, #all_friends strong, #all_friends_in_my_profile strong {
+    padding-bottom: 5px;
+}
+.list_friends {
+    overflow-y: scroll;
+    max-height: 180px;
+}
+.list_friends::-webkit-scrollbar {
+    width: 6px;
+}
+.list_friends::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: white;
+}
+.list_friends::-webkit-scrollbar-thumb {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: black;
+}
+.list_friends div {
+    border-radius: 15px;
+    width: calc( 100% - 14px );
+    cursor: pointer;
+    color: grey;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px;
+    height: 50px;
+    margin-bottom: 1px;
+}
+.list_friends div:hover {
+    color: white;
+    background-color: black;
+}
+.list_friends div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    float: left;
+}
+.list_friends div strong {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+}
+
+#gallery {
+    position: absolute;
+    top: 460px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+#gallery p {
+    text-align: center;
+    margin: 7px;
+}
+#gallery img {
+    border-radius: 10px;
+    cursor: pointer;
+    width: calc( 20% - 20px );
+    height: 115px;
+    margin: 10px;
+    float: left;
+}

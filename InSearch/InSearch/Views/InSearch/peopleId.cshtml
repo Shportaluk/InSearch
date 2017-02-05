@@ -1,0 +1,133 @@
+﻿@using InSearch.Entities;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    bool isMyProfile = ViewBag.IsMyProfile;
+    User user = ViewBag.user;
+    ViewBag.Title = user.FirstName + " " + user.LastName;
+}
+
+<link href="~/Styles/peopleId.css" rel="stylesheet" />
+
+<img id="profile_img" src="~/ServerImages/@user.PathImg" />
+<div id="action_on_user">
+    @if (isMyProfile)
+    {
+        <button id="edit_profile">Редагувати</button>
+    }
+    else
+    {
+        <button id="send_msg">Надіслати повідомлення</button>
+        <button id="add_to_friend">Добавити в друзі</button>
+    }
+</div>
+<div id="header_info">
+    <strong id="full_name">@user.FirstName @user.LastName</strong>
+
+    <div class="status">
+        @if (user.IsOnline)
+        {
+            <div class="circle_online"></div>
+            <strong class="strong_online">Online</strong>
+        }
+        else
+        {
+
+            <div class="circle_offline"></div>
+            <strong class="strong_offline">Offline</strong>
+        }
+    </div>
+</div>
+
+
+<div id="information">
+    @if (!string.IsNullOrEmpty(user.Country))
+    {
+        <p>
+            <strong>Країна:</strong>
+            <strong class="text_in_border">@user.Country</strong>
+        </p>
+    }
+    @if (!string.IsNullOrEmpty(user.City))
+    {
+        <p>
+            <strong>Місто:</strong>
+            <strong class="text_in_border">@user.City</strong>
+        </p>
+    }
+    @if (!string.IsNullOrEmpty(user.Phone))
+    {
+        <p>
+            <strong>Телефон:</strong>
+            <strong class="text_in_border">@user.Phone</strong>
+        </p>
+    }
+</div>
+
+<div id="friends">
+    <div id="layout">
+        @if (!isMyProfile)
+        {
+            <div id="mutual_friends">
+                <strong style="display: block; text-align: center">Спільні друзі</strong>
+                <div class="list_friends">
+                    <div>
+                        <img src="https://pp.vk.me/c628523/v628523355/32ec0/fwy5VO4-jxI.jpg" />
+                        <strong>Александра Матвийчук</strong>
+                    </div>
+                    <div>
+                        <img src="https://pp.vk.me/c836130/v836130478/6891/-hJ3za6E4RM.jpg" />
+                        <strong>Оленка Попович</strong>
+                    </div>
+                    <div>
+                        <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                        <strong>Маша Федас</strong>
+                    </div>
+                    <div>
+                        <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                        <strong>Маша Федас</strong>
+                    </div>
+                    <div>
+                        <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                        <strong>Маша Федас</strong>
+                    </div>
+                </div>
+            </div>
+        }
+        <div  @if (isMyProfile) { <text>id="all_friends_in_my_profile"</text>} else { <text>id="all_friends"</text> } >
+            <strong style="display: block; text-align: center">Друзі</strong>
+            <div class="list_friends">
+                <div>
+                    <img src="https://pp.vk.me/c628523/v628523355/32ec0/fwy5VO4-jxI.jpg" />
+                    <strong>Александра Матвийчук</strong>
+                </div>
+                <div>
+                    <img src="https://pp.vk.me/c836130/v836130478/6891/-hJ3za6E4RM.jpg" />
+                    <strong>Оленка Попович</strong>
+                </div>
+                <div>
+                    <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                    <strong>Маша Федас</strong>
+                </div>
+                <div>
+                    <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                    <strong>Маша Федас</strong>
+                </div>
+                <div>
+                    <img src="https://pp.vk.me/c638324/v638324792/1ee0/gJjapI5WL40.jpg" />
+                    <strong>Маша Федас</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="gallery">
+    <p>Галерея</p>
+    <img src="https://static.pexels.com/photos/46710/pexels-photo-46710.jpeg" />
+    <img src="http://static.bigstockphoto.com/images/homepage/2016_popular_photo_categories.jpg" />
+    <img src="https://iso.500px.com/wp-content/uploads/2016/02/stock-photo-114337435-1500x1000.jpg" />
+    <img src="https://static.pexels.com/photos/7045/pexels-photo.jpeg" />
+    <img src="http://www.smh.com.au/content/dam/images/g/r/0/l/p/k/image.related.articleLeadwide.620x349.gr14zs.png/1472435764135.jpg" />
+
+</div>

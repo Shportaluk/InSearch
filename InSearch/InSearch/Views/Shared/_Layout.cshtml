@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="~/Styles/main_style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="header">
+        <a href="~/index" id="InSearch">@Resources.Resource.Title</a>
+        <a href="~/search" id="search" class="button">@Resources.Resource.a_Search</a>
+        <a href="~/logout" id="logout" class="button">@Resources.Resource.a_Exit</a>
+    </div>
+    <div id="block">
+        <aside>
+            <a href="~/peopleId">
+                <img src="~/Styles/Images/Aside/profile.png" />
+                <strong>@Resources.Resource.a_MyProfile</strong>
+            </a>
+            <a href="~/messages">
+                <img src="~/Styles/Images/Aside/message.png" />
+                <strong>@Resources.Resource.a_MyMessage</strong>
+            </a>
+            <a href="~/friends">
+                <img src="~/Styles/Images/Aside/friends.png" />
+                <strong>@Resources.Resource.a_MyFriends</strong>
+            </a>
+            <a href="~/question">
+                <img src="~/Styles/Images/Aside/question.png" />
+                <strong>@Resources.Resource.a_Question</strong>
+            </a>
+            <a href="~/feed">
+                <img src="~/Styles/Images/Aside/feed.png" />
+                <strong>@Resources.Resource.a_Feed</strong>
+            </a>
+
+        </aside>
+    </div>
+    <div id="main">
+        @RenderBody()
+    </div>
+</body>
+</html>

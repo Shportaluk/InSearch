@@ -1,0 +1,131 @@
+﻿#login, #registration{
+    float: left;
+}
+#login_or_registretion {
+    position: absolute;
+    right: 12px;
+    top: 4px;
+}
+#header strong {
+    float: left;
+    margin: 10px;
+}
+
+#layout {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    height: calc( 100% - 50px );
+
+    z-index: 0;
+}
+
+button, input[type=submit]  {
+    box-shadow: 0 0 1px black;
+}
+#form_login button, #form_login input[type=submit],
+#form_registration button, #form_registration input[type=submit]{
+    margin: 5px 5px 5px 0px;
+}
+
+#form_login, #form_registration {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -205px;
+    margin-top: -200px;
+    width: 410px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 75px black;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+}
+#form_login p strong, #form_registration p strong {
+    position: relative;
+    top: 3px;
+    margin: 25px;
+}
+
+#form_login p input[type=text], #form_login p input[type=password], 
+#form_registration p input[type=text], #form_registration  p input[type=password] {
+    position: absolute;
+    left: 120px;
+    width: 250px;
+    padding: 5px;
+}
+.g-recaptcha {
+    margin-left: 40px;
+}
+#error {
+    position: relative;
+    top: -7px;
+    margin-bottom: 5px;
+}
+#error_registration {
+    position: relative;
+    top: 5px;
+    margin-bottom: 15px;
+}
+#error strong, #error_registration strong {
+    color: red;
+    border: 1px solid red;
+    padding: 7px;
+}
+
+#close, input[type=submit] {
+    float: right;
+}
+
+input[type=radio] {
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+
+
+#form_registration {
+
+}
+
+
+
+
+#list_services_login {
+    position: absolute;
+    left: calc( 50% + 220px );
+    top: calc( 50% - 210px );
+    width: 100px;
+    opacity: 0;
+    display: none;
+}
+#list_services_login a img {
+    width: 26px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+#list_services_login a {
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    padding: 2px 7px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    box-shadow: 0 0 1px white;
+}
+#list_services_login a:hover  {
+    background-color: grey;
+    box-shadow: 0 0 2px white;
+}
+#list_services_login a:hover>strong  {
+    color: white;
+}
+#list_services_login strong {
+    font-size: 12px;
+    position: relative;
+    top: -9px;
+    left: 5px;
+    color: grey;
+}

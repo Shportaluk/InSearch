@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InSearch.WebUI", "InSearch\InSearch.WebUI.csproj", "{E9B91C2A-E98B-4FA5-8D2A-55572643B99F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InSearch.Entities", "InSearch.Entities\InSearch.Entities.csproj", "{84D03A1F-C5AC-4E83-AA5E-51C6D4D899C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InSearch.Repositories", "InSearch.Repositories\InSearch.Repositories.csproj", "{C74ECDFA-6AEB-48D3-978D-8F9BF976DAC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B91C2A-E98B-4FA5-8D2A-55572643B99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B91C2A-E98B-4FA5-8D2A-55572643B99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B91C2A-E98B-4FA5-8D2A-55572643B99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B91C2A-E98B-4FA5-8D2A-55572643B99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D03A1F-C5AC-4E83-AA5E-51C6D4D899C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D03A1F-C5AC-4E83-AA5E-51C6D4D899C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D03A1F-C5AC-4E83-AA5E-51C6D4D899C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D03A1F-C5AC-4E83-AA5E-51C6D4D899C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74ECDFA-6AEB-48D3-978D-8F9BF976DAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74ECDFA-6AEB-48D3-978D-8F9BF976DAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74ECDFA-6AEB-48D3-978D-8F9BF976DAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74ECDFA-6AEB-48D3-978D-8F9BF976DAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
